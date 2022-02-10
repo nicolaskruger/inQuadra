@@ -1,6 +1,7 @@
-import { Flex, Slider } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import { Colaborators } from '../app/Colaborators';
+import { Slider } from '../app/commonComponents/Slider';
 import { Header } from '../app/Header';
 import { HowHelp } from '../app/HowHelp';
 import { KnowProject } from '../app/KnowProject';
@@ -8,14 +9,14 @@ import { Sponsor } from '../app/Sponsor';
 
 const Home: NextPage = () => {
   return (
-    <Flex direction={"column"} w={"100%"}>
+    <main>
       <Header />
       <Slider />
-      <KnowProject />
+      {/* <KnowProject />
       <HowHelp />
       <Colaborators />
-      <Sponsor />
-    </Flex>
+      <Sponsor /> */}
+    </main>
   );
 };
 
