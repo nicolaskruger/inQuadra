@@ -13,18 +13,12 @@ export const Header: FC = () => {
                             In
                         </Text>
                         <Text textColor={"green.300"}>
-                            Quadras
+                            Quadra
                         </Text>
                     </Heading>
                     <Spacer />
                     <MenuDrawer />
                 </ContainerInQ>
-            </Flex>
-
-            <Flex visibility={"hidden"} display={""} py={"4"}>
-                <Heading>
-                    a
-                </Heading>
             </Flex>
         </>
     )
