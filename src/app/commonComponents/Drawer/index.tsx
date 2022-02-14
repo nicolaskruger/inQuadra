@@ -26,14 +26,14 @@ export const MenuDrawer: FC = () => {
             id: "#fotos"
         },
         {
-            icon: FaHandsHelping,
-            title: "Como ajudar",
-            id: "#ajudar"
-        },
-        {
             icon: MdSkateboarding,
             title: "Conheça o projeto",
             id: "#conheca"
+        },
+        {
+            icon: FaHandsHelping,
+            title: "Como ajudar",
+            id: "#ajudar"
         },
     ]
 

@@ -18,6 +18,7 @@ export const Slider: FC = () => {
     return (
         <Swiper
             // install Swiper modules
+            id="fotos"
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             spaceBetween={0}
             slidesPerView={1}

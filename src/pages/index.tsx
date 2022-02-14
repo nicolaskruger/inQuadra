@@ -12,10 +12,10 @@ const Home: NextPage = () => {
     <main>
       <Header />
       <Slider />
-      {/* <KnowProject />
+      <KnowProject />
       <HowHelp />
       <Colaborators />
-      <Sponsor /> */}
+      <Sponsor />
     </main>
   );
 };
