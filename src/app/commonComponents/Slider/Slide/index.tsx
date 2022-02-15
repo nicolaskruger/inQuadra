@@ -9,7 +9,7 @@ export const Slide: FC<SlideProps> = ({ src }) => {
     return (
         <Flex
             width={"100vw"}
-            height={["250px", "450px"]}
+            height={["250px", "450px", "450px", "450px", "500px"]}
             backgroundSize={"cover"}
             position={"relative"}
             align={"center"}
