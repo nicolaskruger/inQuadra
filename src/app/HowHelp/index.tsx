@@ -21,7 +21,7 @@ const list: HowHeplProps[] = [
 
 export const HowHelp: FC = () => {
     return (
-        <OffsetWrapperAncor id="ajuda">
+        <OffsetWrapperAncor id="ajudar">
             <ContainerInQ >
                 <Flex my={"8"} w="100%" justifyContent={["space-evenly", "space-evenly", "space-between"]} wrap={"wrap"} gap="30px">
                     {list.map(props => (
