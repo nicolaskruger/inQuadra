@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Spacer, Text, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Flex, Spacer, Stack, Text, useDisclosure } from "@chakra-ui/react";
 import { FC } from "react";
 import { ModalInQ } from "../../../components/modal";
 
@@ -7,7 +7,7 @@ export type HowHeplProps = {
     description: string
 }
 
-export const HowHelpCard: FC<HowHeplProps> = ({ title, description }) => {
+export const HowHelpCard: FC<HowHeplProps> = ({ title, description, children }) => {
 
     const { onClose, isOpen, onOpen } = useDisclosure();
 
@@ -45,10 +45,12 @@ export const HowHelpCard: FC<HowHeplProps> = ({ title, description }) => {
                     <Text fontSize={"20"} fontWeight={"bold"} color={"green.300"} >+</Text>
                 </Button>
             </Flex>
-            <ModalInQ isOpen={isOpen} onClose={onClose} >
-                {
-                    <h1>modal</h1>
-                }
+            <ModalInQ isOpen={isOpen} onClose={onClose} title={title} >
+                <Box width={"100%"}>
+                    <Stack spacing={4}>
+                        {children}
+                    </Stack>
+                </Box>
             </ModalInQ>
         </>
     )
