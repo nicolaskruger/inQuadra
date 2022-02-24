@@ -12,6 +12,7 @@ import { DrawerCardButton, DrawerCardButtonProps, } from "./DrawerCard";
 import { AiFillPicture } from "react-icons/ai"
 import { FaHandsHelping } from "react-icons/fa";
 import { MdSkateboarding } from "react-icons/md";
+import { BsFillPeopleFill } from "react-icons/bs";
 import { IconType } from "react-icons";
 
 
@@ -35,6 +36,11 @@ export const MenuDrawer: FC = () => {
             title: "Como ajudar",
             id: "#ajudar"
         },
+        {
+            icon: BsFillPeopleFill,
+            title: "Colaboradores",
+            id: "#colaboradores"
+        }
     ]
 
     return (

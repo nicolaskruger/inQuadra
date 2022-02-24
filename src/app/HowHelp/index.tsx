@@ -1,4 +1,4 @@
-import { Flex, Link, Text } from "@chakra-ui/react";
+import { Flex, Link, Stack, Text } from "@chakra-ui/react";
 import { FC, ReactNode } from "react";
 import { ContainerInQ } from "../../components/Container";
 import { OffsetWrapperAncor } from "../../components/OffsetWrapperAncor";
@@ -39,7 +39,10 @@ export const HowHelp: FC = () => {
     ]
     return (
         <OffsetWrapperAncor id="ajudar">
-            <ContainerInQ >
+            <ContainerInQ display={"flex"} direction="column" >
+                <Title>
+                    Como ajudar
+                </Title>
                 <Flex my={"8"} w="100%" justifyContent={["space-evenly", "space-evenly", "space-between"]} wrap={"wrap"} gap="30px">
                     {list.map(({ children, ...props }) => (
                         <HowHelpCard key={props.title} {...props} >
