@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       <KnowProject />
       <HowHelp />
       <Colaborators />
-      <Sponsor />
+      {/* <Sponsor /> */}
     </main>
   );
 };
