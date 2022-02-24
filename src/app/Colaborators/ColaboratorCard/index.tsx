@@ -24,8 +24,8 @@ export const ColoboratorCard: FC<ColaboratorCardProps> = ({ name }) => {
                     src={`/colaborators/${name}.jpg`}
                     filter={"grayscale(.5)"}
                     borderRadius={"full"}
-                    height={["30px", "50px", "60px", "75px"]}
-                    width={["30px", "50px", "60px", "75px"]}
+                    height={["45px", "50px", "60px", "75px"]}
+                    width={["45px", "50px", "60px", "75px"]}
                 />
                 <Text
                     fontSize={["sm", "md", "lg"]}
