@@ -1,21 +1,22 @@
-import { Flex, Slider } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import type { NextPage } from 'next';
-import { Colaborators } from '../Colaborators';
-import { Header } from '../Header';
-import { HowHelp } from '../HowHelp';
-import { KnowProject } from '../KnowProject';
-import { Sponsor } from '../Sponsor';
+import { Colaborators } from '../app/Colaborators';
+import { Slider } from '../app/commonComponents/Slider';
+import { Header } from '../app/Header';
+import { HowHelp } from '../app/HowHelp';
+import { KnowProject } from '../app/KnowProject';
+import { Sponsor } from '../app/Sponsor';
 
 const Home: NextPage = () => {
   return (
-    <Flex direction={"column"} w={"100%"}>
+    <main>
       <Header />
       <Slider />
       <KnowProject />
       <HowHelp />
       <Colaborators />
       <Sponsor />
-    </Flex>
+    </main>
   );
 };
 

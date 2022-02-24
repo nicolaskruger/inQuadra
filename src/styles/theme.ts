@@ -8,6 +8,11 @@ export const theme = extendTheme({
         body: "Roboto",
         heading: "Roboto",
     },
+    shadows: {
+        outiline: {
+            color: "green.300"
+        }
+    },
     styles: {
         global: {
             body: {
